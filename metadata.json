@@ -1,0 +1,5 @@
+{
+  "name": "WMS Pro",
+  "description": "SaaS Warehouse Management System with barcode scanning, batch management, and serial number tracking.",
+  "requestFramePermissions": ["camera"]
+}
