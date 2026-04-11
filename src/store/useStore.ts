@@ -167,7 +167,7 @@ export const useStore = create<StoreState>((set) => ({
           return orderItem;
         });
         const isFullyFulfilled = newItems.every(i => i.fulfilledQuantity >= i.quantity);
-        return { ...order, items: newItems, status: isFullyFulfilled ? 'shipped' : 'processing' };
+        return { ...order, items: newItems, status: isFullyFulfilled ? 'shipped' as const : 'processing' as const };
       }
       return order;
     });
